@@ -38,7 +38,7 @@ def make_report_csv(text, username):
     # Reformat report data from mm/dd/yy to yyyymmdd
     date_str = text["41"][2]
     date_obj = datetime.strptime(date_str, "%m/%d/%Y")
-    ymd_date = date_obj.strftime("%Y%m%d")
+    ymd_date = date_obj.strftime("%y%m%d")
     
     # Define all column names
     column_names = [
